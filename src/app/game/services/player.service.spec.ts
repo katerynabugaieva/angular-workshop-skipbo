@@ -1,10 +1,13 @@
 import { TestBed} from '@angular/core/testing';
 import { PlayerService } from './player.service';
+import { GameModule } from '../game.module';
 
 const service: PlayerService = TestBed.get(PlayerService);
+TestBed.configureTestingModule({
+  imports: [ GameModule ]
+});
 
 describe('ServiceService', () => {
-
     beforeEach(() => TestBed.configureTestingModule({}));
     it('should be created', () => {
       expect(service).toBeTruthy();

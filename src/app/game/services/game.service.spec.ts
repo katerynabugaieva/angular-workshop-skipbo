@@ -1,7 +1,11 @@
 import { TestBed} from '@angular/core/testing';
 import { GameService } from './game.service';
+import { GameModule } from '../game.module';
 
 const service: GameService = TestBed.get(GameService);
+TestBed.configureTestingModule({
+  imports: [ GameModule ]
+});
 
 describe('ServiceService', () => {
     beforeEach(() => TestBed.configureTestingModule({}));
