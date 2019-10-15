@@ -1,7 +1,7 @@
 import {Component } from '@angular/core';
 
 @Component({
-    selector: 'app-game-component',
+    selector: 'app-game-component, [app-game-component]',
     templateUrl: './game.component.html'
 })
 export class GameComponent {}
